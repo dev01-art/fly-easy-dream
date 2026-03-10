@@ -898,3 +898,126 @@ footer {
         }
     }
 }
+
+@media (max-width:665px) {
+    header .menu {
+        display: none;
+    }
+    .btn-reservation {
+        display: none;
+    }
+
+    #home h2 {
+        font-size: 12px;
+        -webkit-text-stroke: 0;
+        color: #fff;
+    }
+    #home h4 {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    #home p {
+        text-align: center;
+        font-size: 13px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .find_trip {
+        width: 80%;
+        height: 280px;
+    }
+    .find_trip form {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .find_trip form div {
+        margin-top: 0px;
+        flex-direction: column;
+        width: 40%;
+    }
+    .find_trip form input[type="submit"]{
+        width: 40%;
+        font-size: 6px;
+        height: 40px;
+    }
+    .home-btn {
+        display:block;
+    }
+    /*Responsive A propos*/
+    .img-desc {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-desc .left , .img-desc .right {
+        width: 100%;
+    }
+    .img-desc .left video {
+        width: 100%;
+    }
+    .img-desc .left::after {
+        background-color: transparent;
+    }
+    .img-desc .left {
+        margin-bottom: 20px;
+    }
+
+    /*Responsive menu*/
+    .responsive-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .responsive-menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #202020;
+        width: 28px;
+        box-shadow: 0 10px 0 #202020;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::after {
+        box-shadow: 0 0 0 #202020; 
+        transform: rotate(45deg);
+    }
+    .responsive-menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #202020;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::before {
+        transform: rotate(-45deg);
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: #ffffff;
+        align-items: unset;
+    }
+    header .menu.responsive li {
+        margin: 20px;
+        width: 100px;
+        padding-left: 20px;
+    }
+
+    @keyframes animate-menu {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
+}
