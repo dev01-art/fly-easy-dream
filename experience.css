@@ -1259,3 +1259,48 @@ footer {
     margin-right: 0; /* Enlève la marge de l'icône pour qu'elle soit centrée ou mieux alignée */
   }
 }
+
+@media (max-width: 410px) {
+  header {
+    height: 80px;
+    padding: 0;
+  }
+
+  header .logo img {
+    height: 120px;
+  }
+
+  .settings {
+    margin-bottom: 5px;
+  }
+
+  .search-popup {
+    top: 80px; /* Doit correspondre à la hauteur de votre header */
+  }
+
+  /* Contenu du Popup */
+  .search-content {
+    max-width: 400px;
+    margin: 0;
+    padding: 8px 8%;
+    gap: 5px;
+  }
+
+  .search-content input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    font-size: 1.4rem;
+  }
+
+  .btn-find {
+    padding: 0 20px;
+    background: #0036e8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}

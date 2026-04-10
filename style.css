@@ -577,7 +577,6 @@ header {
   margin: 10px 0px;
 }
 
-
 #popular-destination h3 {
   font-size: 16px;
   font-weight: 500;
@@ -603,7 +602,7 @@ header {
 }
 
 #popular-destination .box:hover img {
-    transform: scale(1.1); /* Zoom de 10% (1.1) */
+  transform: scale(1.1); /* Zoom de 10% (1.1) */
 }
 
 #popular-destination .content .box .content {
@@ -831,12 +830,10 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .news-form {
     width: 100%;
   }
-
-  
 }
 
 @media (max-width: 480px) {
@@ -864,7 +861,7 @@ footer {
     position: relative;
   }
 
-   #home .slogan {
+  #home .slogan {
     display: none;
   }
 }
@@ -1380,5 +1377,60 @@ footer {
 
   .settings li a span img {
     margin-right: 0; /* Enlève la marge de l'icône pour qu'elle soit centrée ou mieux alignée */
+  }
+}
+
+@media (max-width: 410px) {
+  header {
+    height: 80px;
+    padding: 0;
+  }
+
+  header .logo img {
+    height: 120px;
+  }
+
+  .settings {
+    margin-bottom: 5px;
+  }
+
+  .search-popup {
+    top: 80px; /* Doit correspondre à la hauteur de votre header */
+  }
+
+  /* Contenu du Popup */
+  .search-content {
+    max-width: 400px;
+    margin: 0;
+    padding: 8px 8%;
+    gap: 5px;
+  }
+
+  .search-content input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    font-size: 1.4rem;
+  }
+
+  .btn-find {
+    padding: 0 20px;
+    background: #0036e8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .reservation-container {
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    width: 380px; /* Largeur fixe pour l'aspect colonne */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin-left: 0%;
+    z-index: 5;
   }
 }
