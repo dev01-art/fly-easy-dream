@@ -1,0 +1,155 @@
+.login-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url("assets/model\ fly\ 4.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-logo {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    font-size: 2.4rem;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0036e8;
+    box-shadow: 0 0 0 3px rgba(0, 54, 232, 0.1);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.forgot-password {
+    color: #0036e8;
+    font-weight: 500;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background: #0036e8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #0029b3;
+    transform: translateY(-2px);
+}
+
+.separator {
+    margin: 25px 0;
+    position: relative;
+    text-align: center;
+}
+
+.separator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.separator span {
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+    background: #f9f9f9;
+}
+
+.login-footer {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.login-footer a {
+    color: #0036e8;
+    font-weight: 600;
+}

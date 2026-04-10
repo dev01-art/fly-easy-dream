@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fly Easy Dream</title>
+    <link rel="stylesheet" href="horaire.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="Logo" height="200" />
+        </a>
+      </div>
+      <div class="nav">
+        <div class="settings">
+          <div class="search-trigger">
+            <button class="search-icon-btn" id="searchBtn">
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="site-settings">
+            <button id="openModalBtn" class="lang-btn">
+              <span>🌐 RDC | FR</span>
+            </button>
+          </div>
+          <li>
+            <a href="login.html" class="user">
+              <span
+                ><img src="assets/user.png" alt="" style="width: 16px"
+              /></span>
+              <span class="login-text">Se connecter</span>
+            </a>
+          </li>
+        </div>
+
+        <ul class="menu">
+          <li><a href="#">Réserver votre vol</a></li>
+          <li><a href="horaire.html">Horaires</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="#">Mes réservations</a></li>
+          <li><a href="aide.html">Aide</a></li>
+
+          <li class="dropdown-menu">
+            <a href="javascript:void(0)" class="menu-trigger">
+              <span><img src="assets/menu.png" height="16" /></span> Menu
+            </a>
+            <ul class="dropdown-content">
+              <li><a href="about.html">A propos</a></li>
+              <li><a href="contact.html">Contactez-nous</a></li>
+              <li>
+                <a href="futur_destination.html">Prochaines destinations</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="responsive-menu"></div>
+    </header>
+
+    <section id="home">
+      <div class="reservation-container">
+        <span>Consultez nos horaires de vols</span>
+        <span style="font-weight: 500; font-size: 14px;">Soyez informés en temps réel des vols disponibles sur Fly Easy Dream. Saisissez votre destination</span>
+        <form class="reservation-form">
+          <div class="input-col">
+            <label>Origine</label>
+            <select name="origin">
+              <option value="">Sélectionnez une ville</option>
+              <option value="lubumbashi">Lubumbashi</option>
+              <option value="kolwezi">Kolwezi</option>
+              <option value="kalemie">Kalemie</option>
+              <option value="manono">Manono</option>
+            </select>
+          </div>
+
+          <div class="input-col">
+            <label>Arrivée</label>
+            <select name="destination">
+              <option value="">Sélectionnez une ville</option>
+              <option value="lubumbashi">Lubumbashi</option>
+              <option value="kolwezi">Kolwezi</option>
+              <option value="kalemie">Kalemie</option>
+              <option value="manono">Manono</option>
+            </select>
+          </div>
+
+          <div class="input-col">
+            <label>Date de départ</label>
+            <input type="date" name="departure" />
+          </div>
+
+          <button type="submit" class="btn-find-vols">Rechercher</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="newsletter-content">
+        <div class="news-text">
+          <h2>Restez informé</h2>
+          <p>Recevez nos meilleures offres et actualités directement dans votre boîte mail.</p>
+          <p>Accéder à notre programme de fidelité et restez à la une de chaque nouveauté</p>
+        </div>
+        <form class="news-form">
+          <input type="email" placeholder="Votre adresse email" required />
+          <button type="submit">S'abonner</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Fly Easy Dream</h4>
+          <ul>
+            <li><a href="#">A propos de nous</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>207 avenue KASHOBWE, Madini, LUBUMBASHI, LUBUMBASHI, RDC</p>
+          <p>+243 848 989 418</p>
+          <p>info@flyedsa.ord</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="settingsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Paramètres du site</h2>
+        <div class="modal-body">
+          <div class="input-group">
+            <label>Pays</label>
+            <select id="country-select">
+              <option value="RDC">République Démocratique du Congo</option>
+              <option value="FR">France</option>
+              <option value="BE">Belgique</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Langue</label>
+            <select id="lang-select">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <button id="saveSettings" class="btn-save">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="searchPopup" class="search-popup">
+      <div class="search-content">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Rechercher sur Fly Easy Dream..."
+        />
+        <button class="btn-find">Aller</button>
+      </div>
+    </div>
+
+    <script>
+      var toggle_menu = document.querySelector(".responsive-menu");
+      var menu = document.querySelector(".menu");
+      toggle_menu.onclick = function () {
+        toggle_menu.classList.toggle("active");
+        menu.classList.toggle("responsive");
+      };
+    </script>
+
+    <script>
+      const searchBtn = document.getElementById("searchBtn");
+      const searchPopup = document.getElementById("searchPopup");
+      const searchInput = document.getElementById("searchInput");
+
+      searchBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        searchPopup.classList.toggle("show");
+        if (searchPopup.classList.contains("show")) {
+          setTimeout(() => searchInput.focus(), 100);
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          !searchPopup.contains(event.target) &&
+          !searchBtn.contains(event.target)
+        ) {
+          searchPopup.classList.remove("show");
+        }
+      });
+    </script>
+
+    <script>
+      const modal = document.getElementById("settingsModal");
+      const openBtn = document.getElementById("openModalBtn");
+      const closeBtn = document.querySelector(".close-btn");
+      const saveBtn = document.getElementById("saveSettings");
+
+      // Ouvrir la modale
+      openBtn.onclick = function () {
+        modal.style.display = "block";
+        setTimeout(() => modal.classList.add("show"), 10);
+      };
+
+      // Fermer avec la croix
+      closeBtn.onclick = function () {
+        modal.classList.remove("show");
+        setTimeout(() => (modal.style.display = "none"), 300);
+      };
+
+      // Enregistrer et mettre à jour le texte du bouton
+      saveBtn.onclick = function () {
+        const country = document.getElementById("country-select").value;
+        const lang = document.getElementById("lang-select").value.toUpperCase();
+
+        // Mise à jour visuelle du bouton dans le header
+        openBtn.querySelector("span").innerText = `🌐 ${country} | ${lang}`;
+
+        // Fermeture
+        modal.classList.remove("show");
+        setTimeout(() => (modal.style.display = "none"), 300);
+      };
+
+      // Fermer si on clique à côté de la modale
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.classList.remove("show");
+          setTimeout(() => (modal.style.display = "none"), 300);
+        }
+      };
+    </script>
+
+    <script>
+      const menuTrigger = document.querySelector(".menu-trigger");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+
+      menuTrigger.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        dropdownMenu.classList.toggle("active");
+      });
+
+      // Fermer le menu si on clique ailleurs
+      document.addEventListener("click", function () {
+        dropdownMenu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
