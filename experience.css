@@ -1260,7 +1260,7 @@ footer {
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 580px) {
   header {
     height: 80px;
     padding: 0;
