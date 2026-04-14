@@ -261,7 +261,8 @@ header {
 /* Home acceuil CSS */
 
 #home {
-  background: url("assets/cover.jpg");
+  background: linear-gradient(rgba(0, 5, 53, 0.5), rgba(0, 5, 53, 0.5)), 
+                url("assets/cover.jpg");
   background-position: center;
   background-size: cover;
   height: 65vh;
@@ -695,9 +696,10 @@ iframe {
 
 /* --- Section Newsletter --- */
 #newsletter {
-  background-image: url("assets/1980x1020/1980x1020 fly Easy Dream BG dark blue.jpg");
+  background-color: #000e33;
   padding: 60px 10%;
   margin-top: 100px;
+  border-bottom: 1px solid #b9b9b985;
 }
 
 .newsletter-content {
@@ -753,16 +755,19 @@ iframe {
 
 /* --- Amélioration du Footer --- */
 footer {
-  background-color: #111;
+  background-color: #000e33;
   color: #fff;
-  padding: 70px 30% 10px 30%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 100px;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 50px;
-  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .footer-section h4 {
@@ -1372,11 +1377,11 @@ footer {
 
 @media (max-width: 722px) {
   .user .login-text {
-    display: none; /* Cache le texte */
+    display: none;
   }
 
   .settings li a span img {
-    margin-right: 0; /* Enlève la marge de l'icône pour qu'elle soit centrée ou mieux alignée */
+    margin-right: 0;
   }
 }
 

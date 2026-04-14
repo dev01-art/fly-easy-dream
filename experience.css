@@ -636,9 +636,10 @@ iframe {
 
 /* --- Section Newsletter --- */
 #newsletter {
-  background-image: url("assets/1980x1020/1980x1020 fly Easy Dream BG dark blue.jpg");
+  background-color: #000e33;
   padding: 60px 10%;
   margin-top: 100px;
+  border-bottom: 1px solid #b9b9b985;
 }
 
 .newsletter-content {
@@ -694,18 +695,20 @@ iframe {
 
 /* --- Amélioration du Footer --- */
 footer {
-  background-color: #111;
+  background-color: #000e33;
   color: #fff;
-  padding: 70px 30% 10px 30%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 100px;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 50px;
-  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
-
 .footer-section h4 {
   font-size: 1.8rem;
   color: #fff;

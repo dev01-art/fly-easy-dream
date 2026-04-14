@@ -696,9 +696,10 @@ iframe {
 
 /* --- Section Newsletter --- */
 #newsletter {
-  background-image: url("assets/1980x1020/1980x1020 fly Easy Dream BG dark blue.jpg");
+  background-color: #000e33;
   padding: 60px 10%;
   margin-top: 100px;
+  border-bottom: 1px solid #b9b9b985;
 }
 
 .newsletter-content {
@@ -754,16 +755,16 @@ iframe {
 
 /* --- Amélioration du Footer --- */
 footer {
-  background-color: #111;
+  background-color: #000e33;
   color: #fff;
   padding: 70px 30% 10px 30%;
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 50px;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 0;
+  margin-bottom: 30px;
 }
 
 .footer-section h4 {
@@ -835,25 +836,9 @@ footer {
   .news-form {
     width: 100%;
   }
-
-  .footer-container {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
-@media (max-width: 480px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
-}
 
-/* Responsive Footer */
-@media (max-width: 900px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
 .responsive-menu {
   display: none;
 }
@@ -1120,17 +1105,6 @@ footer {
   .footer-container {
     grid-template-columns: 1fr;
   }
-}
-
-/* Responsive Footer */
-@media (max-width: 900px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-.responsive-menu {
-  display: none;
 }
 
 @media (max-width: 1075px) {
